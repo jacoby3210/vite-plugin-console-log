@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "path-browserify": "^1.0.1",
-    "vite-plugin-console-log": "^0.5.4",
+    "vite-plugin-advanced-console-log": "^0.6.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-console-log",
+  "name": "vite-plugin-advanced-console-log",
   "version": "0.6.0",
   "description": "Add 'console.log' timestamp, file location and line number.",
   "main": "lib/index.cjs.js",
