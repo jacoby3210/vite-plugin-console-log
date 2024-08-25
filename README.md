@@ -1,35 +1,39 @@
 # vite-plugin-console-line
 
-English [中文](./README_ZH.md)
+## 📝 Brief
+A vite plugin,that show your **console.log(xx)** timestamp, file location and line number.
 
-> A vite plugin,that show your **console.log(xx)** file location and line number.
+## 🛠️ Developer Tech Stack
+Template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Include example project for tests.
 
-# Usage
+## ✨ Features
+Using some params:
+- **exclude** : the paths that you don`t want to transform.
+- **port** : if you want to navigate from the browser's console to the editor, 
+you should set this field, and the field value should be the port of your proxy server.
 
-```javascript
-import consoleLine from "vite-plugin-console-line";
+## ⚡ How To Start
+1) Install package:
+```Bash
+npm install vite-plugin-console-log
+```
+2) Add to plugin array on 'vite.config.js':
 
-const viteConfig = defineConfig({
-  // ...
-  plugins: [consoleLine({ exclude: ["node_modules"], port: 9528 })],
-  // ...
+```JSON
+import { defineConfig } from 'vite'
+import consoleLine from "vite-plugin-console-log";
+
+export default defineConfig({
+  plugins: [
+		consoleLine({ exclude: ["node_modules"] }),
+  ]
 });
 ```
 
-# Params
+## 🎞️ Screenshots
+![alt text](assets/image.png)
+![alt text](assets/image-simple.png)
 
-- **exclude** : the paths that you dont want to transform.
-
-- **port** :
-  If you want to navigate from the browser's console to the editor, you should set this field, and the field value should be the port of your proxy server.
-
-When debugging in your code, you can view the file location and line numbers for **console.log()** statements in the browser's console. Clicking on the link will take you back to the editor and navigate to the location of the current **console.log()**.
-
-![consolo.log()](./assets/image.png)
-
-Sometimes you may only need to display the file location and line number for **console.log()**. In that case, you can omit the **port** field when passing the parameters.
-![consolo.log()](./assets/image-simple.png)
-
-# About **Open In Editor**
-
-`open in editor` feature is depends on [launch-editor](https://github.com/yyx990803/launch-editor).
+## 💡 Update (or fixes) requests
+Fully ready for further use.
