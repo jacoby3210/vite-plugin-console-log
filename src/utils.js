@@ -18,7 +18,7 @@ export function generateTime() {
  * @returns {string}
  */
 export function generateLogTitle() {
-  return `"%c[CONSOLE-LINE - ${generateTime()}]:`;
+  return `"%c[${generateTime()}]:`;
 }
 
 /**
@@ -35,7 +35,7 @@ export function generateLogTitleStyle() {
  * @returns {string}
  */
 export function generateFileLocation(location) {
-  return `%cFile: ${location}  `;
+  return `%c${location} `;
 }
 
 /**
@@ -82,7 +82,7 @@ export function generateAddressStyle() {
  * @returns {string}
  */
 export function generateNewLine() {
-  return '%c\\n"'
+  return '"'
 }
 
 /**

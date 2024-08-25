@@ -1,15 +1,14 @@
 {
-  "name": "vite-plugin-console-line",
-  "version": "0.4.0",
-  "description": "Add 'console.log' file location and line number infomation in the code.",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.es.js",
+  "name": "vite-plugin-console-log",
+  "version": "0.5.0",
+  "description": "Add 'console.log' timestamp, file location and line number.",
+  "module": "src/index.js",
   "scripts": {
     "build": "vite build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lq9958/vite-plugin-console-line.git"
+    "url": "git+https://github.com/jacoby3210/vite-plugin-console-log.git"
   },
   "files": [
     "lib"
@@ -21,12 +20,12 @@
     "console.log",
     "vite-plugin"
   ],
-  "author": "lq9958<joneleeea@gmail.com>",
+  "author": "jacoby3210<jacoby3210@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lq9958/vite-plugin-console-line/issues"
+    "url": "https://github.com/jacoby3210/vite-plugin-console-log/issues"
   },
-  "homepage": "https://github.com/lq9958/vite-plugin-console-line#readme",
+  "homepage": "https://github.com/jacoby3210/vite-plugin-console-log#readme",
   "devDependencies": {
     "vite": "^4.4.9"
   },
