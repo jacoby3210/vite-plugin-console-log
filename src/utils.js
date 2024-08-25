@@ -86,14 +86,6 @@ export function generateNewLine() {
 }
 
 /**
- * 
- * @returns {string}
- */
-export function generateNewLineStyle() {
-  return `"color: inherit"`;
-}
-
-/**
  * @param {Object} components 
  * @param {string} components.prefix
  * @param {string} components.suffix
@@ -117,6 +109,5 @@ export function composeConsoleLog(components) {
     + `${generateFileLocationStyle()},`
     + `${generateLineStyle()},`
     + (jump ? `${generateAddressStyle()},` : '')
-    + `${generateNewLineStyle()},`
     + suffix}`;
 }
