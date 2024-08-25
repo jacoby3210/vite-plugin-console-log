@@ -20,7 +20,7 @@ npm install vite-plugin-console-log
 ```
 2) Add to plugin array on 'vite.config.js':
 
-```JSON
+```JSX
 import { defineConfig } from 'vite'
 import consoleLine from "vite-plugin-console-log";
 

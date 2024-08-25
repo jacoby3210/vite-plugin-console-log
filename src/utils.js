@@ -18,7 +18,7 @@ export function generateTime() {
  * @returns {string}
  */
 export function generateLogTitle() {
-  return `"%c[${generateTime()}]:`;
+  return `"%c[${generateTime()}]`;
 }
 
 /**
