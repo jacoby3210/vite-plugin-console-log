@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import consoleLine from 'vite-plugin-advanced-console-log'
+import consoleLine from '../src/index' 
 
 // https://vitejs.dev/config/
 const port = 9528
