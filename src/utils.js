@@ -1,7 +1,3 @@
-const BaseURL = 'http://localhost:';
-const port = 9528;
-const middlewareName = 'browser';
-
 // helpers
 export function generateTime() {
   const date = new Date();
@@ -12,26 +8,31 @@ export function generateTime() {
 }
 
 // data
-function generateLogTitle() {return `"%c[${generateTime()}]`;}
-function generateFileLocation(location) {return `%c vscode://file/${location}`;}
-function generateLine(lineCount) {return `%c :${lineCount}\\n`;}
-function generateNewLine() {return '"'}
+const generateStartLine= () => '"';
+const generateLogTitle = () => `%c[${generateTime()}]`;
+const generateFileLocation = (location) =>  ` vscode://file/${location}`;
+const generateLine = (lineCount) =>  `:${lineCount}\\n`;
+const generateEndLine= () => '",';
 
 // style
-function generateLogTitleStyle() 			{return `"color:#3A6F28;padding:2px 5px;font-weight:700;"`}
-function generateFileLocationStyle() 	{return `"color: #00A29B;"`;}
-function generateLineStyle() 					{return `"color: #9E6BB5;"`;}
+const generateLogTitleStyle = () => `"color:#3A6F28;font-weight:700;",`;
 
 // style
 export function composeConsoleLog(components) {
-  const { prefix, suffix, fileRelativePath, fileAbsolutePath, lineCount, endColumn, jump } = components;
-  return `${prefix
+  const { 
+		prefix, 
+		suffix, 
+		fileAbsolutePath, 
+		lineCount, 
+		endColumn
+	} = components;
+  
+	return prefix
+		+ generateStartLine()
     + generateLogTitle()
     + generateFileLocation(fileAbsolutePath)
-    + generateLine(lineCount)
-    + `${generateNewLine()},`
-    + `${generateLogTitleStyle()},`
-    + `${generateFileLocationStyle()},`
-    + `${generateLineStyle()},`
-    + suffix}`;
+    + generateLine(lineCount, endColumn)
+    + generateEndLine()
+    + generateLogTitleStyle()
+    + suffix;
 }

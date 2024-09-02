@@ -1,7 +1,7 @@
 {
-  "name": "vite-plugin-advanced-console-log",
-  "version": "0.6.1",
-  "description": "Add 'console.log' timestamp, file location and line number.",
+  "name": "vite-plugin-console-pro",
+  "version": "0.6.2",
+  "description": "Adds a timestamp and an active link to the 'console.log' output to open the source file in Visual Code.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
   "scripts": {
@@ -24,9 +24,9 @@
   "author": "jacoby3210<jacoby3210@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jacoby3210/vite-plugin-console-log/issues"
+    "url": "https://github.com/jacoby3210/vite-plugin-console-pro/issues"
   },
-  "homepage": "https://github.com/jacoby3210/vite-plugin-console-log#readme",
+  "homepage": "https://github.com/jacoby3210/vite-plugin-console-pro#readme",
   "devDependencies": {
     "vite": "^4.4.9"
   },
