@@ -1,4 +1,4 @@
-# vite-plugin-console-line
+# vite-plugin-console-pro
 
 ## 📝 Brief
 A vite plugin,that show your **console.log(xx)** timestamp, file location and line number.
@@ -10,19 +10,17 @@ Include example project for tests.
 ## ✨ Features
 Using some params:
 - **exclude** : the paths that you don`t want to transform.
-- **port** : if you want to navigate from the browser's console to the editor, 
-you should set this field, and the field value should be the port of your proxy server.
 
 ## ⚡ How To Start
 1) Install package:
 ```Bash
-npm install vite-plugin-console-log
+npm install vite-plugin-console-pro
 ```
 2) Add to plugin array on 'vite.config.js':
 
 ```JSX
 import { defineConfig } from 'vite'
-import consoleLine from "vite-plugin-console-log";
+import consoleLine from "vite-plugin-console-pro";
 
 export default defineConfig({
   plugins: [

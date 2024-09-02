@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-console-pro",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Adds a timestamp and an active link to the 'console.log' output to open the source file in Visual Code.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jacoby3210/vite-plugin-console-log.git"
+    "url": "git+https://github.com/jacoby3210/vite-plugin-console-pro.git"
   },
   "files": [
     "lib"
