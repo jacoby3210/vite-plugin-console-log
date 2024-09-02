@@ -8,7 +8,7 @@ import { composeConsoleLog } from './utils'
  * @param {number|string} options.port - server port
  * @returns {object}
  */
-function consoleLine(options) {
+function consolePro(options) {
   return {
     name: 'vite-plugin-console-line',
     transform(code, id) {
@@ -59,4 +59,4 @@ function consoleLine(options) {
   };
 }
 
-export default consoleLine
+export default consolePro
